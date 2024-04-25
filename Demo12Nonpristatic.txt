@@ -1,0 +1,15 @@
+class Nonpristatic1
+{
+	static Nonpristatic1 ref;
+	public static void main(String args[])
+	{
+	System.out.println("Start");
+	ref = new Nonpristatic1();
+	ref.m1();
+	}
+	void m1()
+	{
+	System.out.println("Inside m1 Method");
+	}
+	
+}

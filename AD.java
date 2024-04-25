@@ -1,0 +1,35 @@
+class Animal 
+{
+	void makesound()
+	{
+		System.out.println("Animal");
+	}
+
+}
+class Dog extends Animal
+{
+	void makesound()
+	{
+		System.out.println("Dog");
+	}
+}
+class AD
+{
+	public static void main(String ard[])
+	{
+		Animal a = new Dog(); /// upcasting
+		a.makesound();
+		
+
+		Dog d = (Dog)a; // downcasting
+		a.makesound();
+		a.makesound();
+
+	
+		((Animal)a).makesound();
+
+		 //new Animal();
+		//makesound();
+	}
+
+}
